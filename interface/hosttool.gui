@@ -1,15 +1,13 @@
 guiTypes = {
 
 	containerWindowType = {
-		name = "hosttool_open_container"
+		name = "bt_open_container"
 		position = { x = -615 y = 4 }
 		Orientation = UPPER_RIGHT
 		buttonType = {
-			name = "tool_open"
-			#quadTextureSprite = "GFX_generic_bg"
+			name = "bt_open"
 			quadTextureSprite = "GFX_generic_box_96"
 			position = { x = 0 y = 0 }
-			#scale=0.5
 			pdx_tooltip = "[ST_TOOLTIP]"
 			clicksound = click_ok
 			oversound = ui_menu_over
@@ -17,7 +15,6 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "bt_open_title"
-			#position = {x=22 y=5}
 			position = {x= 6 y=4}
 			font = "hoi_18mbs"
 			text = "[host_transfer_states_tooltip]"

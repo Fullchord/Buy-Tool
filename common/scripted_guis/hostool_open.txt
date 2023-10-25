@@ -1,15 +1,15 @@
 scripted_gui = {
 
-	tool_open= {
+	bt_open= {
 		context_type = player_context
 
-		window_name = "hosttool_open_container"
+		window_name = "bt_open_container"
 		visible = {
 			
 		}
 
 		effects = {
-			tool_open_click = {
+			bt_open_click = {
 				if = {
 					limit = { ROOT = { NOT = { has_country_flag = hosttool_enabled } } }
 					ROOT = { set_country_flag = hosttool_enabled }
@@ -20,7 +20,7 @@ scripted_gui = {
 			}
 		}
 		triggers = {
-			tool_open_click_enabled = {
+			bt_open_click_enabled = {
 				always = yes
 			}
 		}
