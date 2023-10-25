@@ -11,11 +11,11 @@ scripted_gui = {
 		effects = {
 			bt_open_click = {
 				if = {
-					limit = { ROOT = { NOT = { has_country_flag = hosttool_enabled } } }
-					ROOT = { set_country_flag = hosttool_enabled }
+					limit = { ROOT = { NOT = { has_country_flag = bt_enabled } } }
+					ROOT = { set_country_flag = bt_enabled }
 				}
 				else = {
-					ROOT = { clr_country_flag = hosttool_enabled }
+					ROOT = { clr_country_flag = bt_enabled }
 				}
 			}
 		}

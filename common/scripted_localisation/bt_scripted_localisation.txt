@@ -25,7 +25,7 @@ defined_text = { # global
 
 	text = {
 		trigger = {
-			has_country_flag = hosttool_enabled
+			has_country_flag = bt_enabled
 		}
 		localization_key = host_transfer_states_off
 	}
@@ -39,7 +39,7 @@ defined_text = { # global
 
 	text = {
 		trigger = {
-			has_country_flag = hosttool_enabled
+			has_country_flag = bt_enabled
 		}
 		localization_key = ST_TOOLTIP_off
 	}

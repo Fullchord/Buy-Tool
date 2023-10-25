@@ -3,4 +3,9 @@ spriteTypes = {
 		name = "GFX_whitepeace_new"
 		textureFile = "gfx/host tool/horsttool/whitepeace_new.dds"
 	}
+	spriteType = {
+		name = "GFX_bt_container_bg"
+		textureFile = "gfx/buy_tool/bt_container_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
 }

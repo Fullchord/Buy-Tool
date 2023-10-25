@@ -4,11 +4,11 @@ scripted_gui = {
 
 		context_type = selected_state_context
 
-		window_name = "hosttool_container"
+		window_name = "bt_container"
 
 		visible = {
 			ROOT = {
-				has_country_flag = hosttool_enabled
+				has_country_flag = bt_enabled
 			}
 		}
 
@@ -228,7 +228,7 @@ scripted_gui = {
 			}
 
 
-			toogle_mark_click = {
+			bt_toogle_mark_click = {
 				if={
 					limit={check_variable={host_mark_status=0}}
 					set_variable={host_mark_status=2}
@@ -254,7 +254,7 @@ scripted_gui = {
 		}
 		properties = {
 
-			toogle_mark={
+			bt_toogle_mark={
 				frame = host_mark_status
 			}
 		}
