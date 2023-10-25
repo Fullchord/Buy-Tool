@@ -1,0 +1,257 @@
+bt_decision_category = {
+    DEBUG_ADD_DYNAMIC_MODEFIER = { #adds the dynamic modefier to the current country
+        priority = 999
+        visible = {
+			is_debug = yes
+		}
+        complete_effect = {
+            add_dynamic_modifier = { modifier = bt_payments }
+        }
+    }
+    DEBUG_ADD_1_TO_PAYMENTS_VAR = { # adds 1 to the payments VAR
+        priority = 999
+        visible = {
+			is_debug = yes
+		}
+        complete_effect = {
+            add_to_variable = {
+                var = ROOT.bt_payment_count
+                value = 1
+            }
+        }
+    }
+    DEBUG_SUBTRACT_1_TO_PAYMENTS_VAR = { # subtracts 1 from payments VAR
+        priority = 999
+        visible = {  
+			is_debug = yes
+		}
+        complete_effect = {
+            subtract_from_variable = {
+                var = ROOT.bt_payment_count
+                value = 1
+            }
+        }
+    }
+    DEBUG_START_MISSION = { # starts mission
+        priority = 999
+        visible = {  
+			is_debug = yes
+		}
+        complete_effect = {
+            bt_start_new_payment = yes
+        }
+    }
+    DEBUG_SET_PAYMENT_COUNTRY = { # Testing Country Localisation
+        priority = 999`
+        visible = {  
+			is_debug = yes
+		}
+        complete_effect = {
+            set_variable = {
+                var = ROOT.bt_current_payment_1_country
+                value = BEL
+            }
+        }
+    }
+    bt_current_payment_1 = {
+        activation = { always = no } # activated by event 
+        icon = mission_icon
+        is_good = yes
+        days_mission_timeout = THIS.bt_payment_timout_1
+        selectable_mission = no
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            subtract_from_variable = {
+                var = ROOT.bt_payment_count
+                value = 1
+            }
+            set_variable = {
+                var = ROOT.bt_payment_timout_1
+                value = 0
+            }
+        }
+    }
+    bt_current_payment_2 = {
+        activation = { always = no } # activated by event 
+        icon = mission_icon
+        is_good = yes
+        days_mission_timeout = THIS.bt_payment_timout_2
+        selectable_mission = no
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            subtract_from_variable = {
+                var = ROOT.bt_payment_count
+                value = 1
+            }
+            set_variable = {
+                var = ROOT.bt_payment_timout_2
+                value = 0
+            }
+        }
+    }
+    bt_current_payment_3 = {
+        activation = { always = no } # activated by event 
+        icon = mission_icon
+        is_good = yes
+        days_mission_timeout = THIS.bt_payment_timout_3
+        selectable_mission = no
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            subtract_from_variable = {
+                var = ROOT.bt_payment_count
+                value = 1
+            }
+            set_variable = {
+                var = ROOT.bt_payment_timout_3
+                value = 0
+            }
+        }
+    }
+    bt_current_payment_4 = {
+        activation = { always = no } # activated by event 
+        icon = mission_icon
+        is_good = yes
+        days_mission_timeout = THIS.bt_payment_timout_4
+        selectable_mission = no
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            subtract_from_variable = {
+                var = ROOT.bt_payment_count
+                value = 1
+            }
+            set_variable = {
+                var = ROOT.bt_payment_timout_4
+                value = 0
+            }
+        }
+    }
+    bt_current_payment_5 = {
+        activation = { always = no } # activated by event 
+        icon = mission_icon
+        is_good = yes
+        days_mission_timeout = THIS.bt_payment_timout_5
+        selectable_mission = no
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            subtract_from_variable = {
+                var = ROOT.bt_payment_count
+                value = 1
+            }
+            set_variable = {
+                var = ROOT.bt_payment_timout_5
+                value = 0
+            }
+        }
+    }
+    bt_current_payment_6 = {
+        activation = { always = no } # activated by event 
+        icon = mission_icon
+        is_good = yes
+        days_mission_timeout = THIS.bt_payment_timout_6
+        selectable_mission = no
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            subtract_from_variable = {
+                var = ROOT.bt_payment_count
+                value = 1
+            }
+            set_variable = {
+                var = ROOT.bt_payment_timout_6
+                value = 0
+            }
+        }
+    }
+    bt_current_payment_7 = {
+        activation = { always = no } # activated by event 
+        icon = mission_icon
+        is_good = yes
+        days_mission_timeout = THIS.bt_payment_timout_7
+        selectable_mission = no
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            subtract_from_variable = {
+                var = ROOT.bt_payment_count
+                value = 1
+            }
+            set_variable = {
+                var = ROOT.bt_payment_timout_7
+                value = 0
+            }
+        }
+    }
+    bt_current_payment_8 = {
+        activation = { always = no } # activated by event 
+        icon = mission_icon
+        is_good = yes
+        days_mission_timeout = THIS.bt_payment_timout_8
+        selectable_mission = no
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            subtract_from_variable = {
+                var = ROOT.bt_payment_count
+                value = 1
+            }
+            set_variable = {
+                var = ROOT.bt_payment_timout_8
+                value = 0
+            }
+        }
+    }
+    bt_current_payment_9 = {
+        activation = { always = no } # activated by event 
+        icon = mission_icon
+        is_good = yes
+        days_mission_timeout = THIS.bt_payment_timout_9
+        selectable_mission = no
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            subtract_from_variable = {
+                var = ROOT.bt_payment_count
+                value = 1
+            }
+            set_variable = {
+                var = ROOT.bt_payment_timout_9
+                value = 0
+            }
+        }
+    }
+    bt_current_payment_10 = {
+        activation = { always = no } # activated by event 
+        icon = mission_icon
+        is_good = yes
+        days_mission_timeout = THIS.bt_payment_timout_10
+        selectable_mission = no
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            subtract_from_variable = {
+                var = ROOT.bt_payment_count
+                value = 1
+            }
+            set_variable = {
+                var = ROOT.bt_payment_timout_10
+                value = 0
+            }
+        }
+    }
+
+}

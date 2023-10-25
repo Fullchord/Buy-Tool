@@ -1,0 +1,23 @@
+﻿l_english:
+ 
+ ST_STATE_MARK_FOR_TRANSFER:0 "§HMark State for Transfer§!\nMark the selected state so it can be transfered \n"
+ ST_STATE_UNMARK_FOR_TRANSFER:0 "§HUnmark State§!\nUnmarks the selected state\n"
+ mark_state_yes:0 ""
+ mark_state_no:0 "\n  §RMarked!§!"
+ mark_status_marked:0   "     Unmark State "
+ mark_status_unmarked:0 "      Mark State  "
+ ST_TOOLTIP_on:0 "§HActivate 'Host Tool'§!"
+ ST_TOOLTIP_off:0 "§HDeactivate 'Host Tool'§!"
+ host_transfer_states_on:0 "Buy Tool: £trigger_no"
+ host_transfer_states_off:0 "Buy Tool: £trigger_yes"
+ 
+ bt_current_payment_1:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_1_country.GetNameWithFlag]"
+ bt_current_payment_2:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_2_country.GetNameWithFlag]"
+ bt_current_payment_3:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_3_country.GetNameWithFlag]"
+ bt_current_payment_4:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_4_country.GetNameWithFlag]"
+ bt_current_payment_5:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_5_country.GetNameWithFlag]"
+ bt_current_payment_6:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_6_country.GetNameWithFlag]"
+ bt_current_payment_7:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_7_country.GetNameWithFlag]"
+ bt_current_payment_8:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_8_country.GetNameWithFlag]"
+ bt_current_payment_9:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_9_country.GetNameWithFlag]"
+ bt_current_payment_10:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_10_country.GetNameWithFlag]"

@@ -5,8 +5,7 @@ scripted_gui = {
 
 		window_name = "hosttool_open_container"
 		visible = {
-			has_country_flag = host
-			NOT = { has_country_flag = hidden_switch }
+			
 		}
 
 		effects = {

@@ -1,0 +1,25 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				# Current Payment VAR
+				set_variable = { THIS.bt_payment_count = 8 } 
+
+				# Timeout Vars
+				set_variable = { THIS.bt_payment_timout_1 = 0}
+				set_variable = { THIS.bt_payment_timout_2 = 0}
+				set_variable = { THIS.bt_payment_timout_3 = 0}
+				set_variable = { THIS.bt_payment_timout_4 = 0}
+				set_variable = { THIS.bt_payment_timout_5 = 0}
+				set_variable = { THIS.bt_payment_timout_6 = 0}
+				set_variable = { THIS.bt_payment_timout_7 = 0}
+				set_variable = { THIS.bt_payment_timout_8 = 0}
+				set_variable = { THIS.bt_payment_timout_9 = 0}
+				set_variable = { THIS.bt_payment_timout_10 = 0}
+			}
+			every_country = {
+				add_dynamic_modifier = { modifier = bt_payments }
+			}
+		}
+	}
+}

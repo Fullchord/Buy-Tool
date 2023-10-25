@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		hosttool_efficency = {
+		test = {
 			picture = SOV_fourth_five_year_plan
 
 			allowed = {
@@ -13,7 +13,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 50
+				production_factory_efficiency_gain_factor = 2
 			}
 		}
 	}

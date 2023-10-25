@@ -1,0 +1,142 @@
+bt_start_new_payment = {
+	if = {
+		limit = {
+			check_variable = {
+				var = ROOT.bt_payment_timout_1
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = ROOT.bt_payment_timout_1
+			value = 100
+		}
+		activate_mission = bt_current_payment_1
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ROOT.bt_payment_timout_2
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = ROOT.bt_payment_timout_2
+			value = 100
+		}
+		activate_mission = bt_current_payment_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ROOT.bt_payment_timout_3
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = ROOT.bt_payment_timout_3
+			value = 100
+		}
+		activate_mission = bt_current_payment_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ROOT.bt_payment_timout_4
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = ROOT.bt_payment_timout_4
+			value = 100
+		}
+		activate_mission = bt_current_payment_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ROOT.bt_payment_timout_5
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = ROOT.bt_payment_timout_5
+			value = 100
+		}
+		activate_mission = bt_current_payment_5
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ROOT.bt_payment_timout_6
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = ROOT.bt_payment_timout_6
+			value = 100
+		}
+		activate_mission = bt_current_payment_6
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ROOT.bt_payment_timout_7
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = ROOT.bt_payment_timout_7
+			value = 100
+		}
+		activate_mission = bt_current_payment_7
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ROOT.bt_payment_timout_8
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = ROOT.bt_payment_timout_8
+			value = 100
+		}
+		activate_mission = bt_current_payment_8
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ROOT.bt_payment_timout_9
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = ROOT.bt_payment_timout_9
+			value = 100
+		}
+		activate_mission = bt_current_payment_9
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ROOT.bt_payment_timout_10
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = ROOT.bt_payment_timout_10
+			value = 100
+		}
+		activate_mission = bt_current_payment_10
+	}
+}

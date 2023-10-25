@@ -1,3 +1,11 @@
+defined_text = {
+	name = get_bt_current_payment_1_country
+	text = {
+		
+	}
+}
+
+
 defined_text = { # state
 	name = mark_state_tooltip
 

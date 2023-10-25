@@ -1,0 +1,12 @@
+bt_payments = {
+	icon = GFX_modifiers_generic_construction
+	enable = { always = yes }
+	remove_trigger = {
+		check_variable = { # makes modefier go away when empty
+			var = ROOT.bt_payment_count
+			value = 0
+			compare = less_than_or_equals
+		}
+	}
+	civilian_factory_use = ROOT.bt_payment_count
+}

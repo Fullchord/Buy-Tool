@@ -2,7 +2,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "hosttool_open_container"
-		position = { x = -505 y = 4 }
+		position = { x = -615 y = 4 }
 		Orientation = UPPER_RIGHT
 		buttonType = {
 			name = "tool_open"
@@ -16,9 +16,9 @@ guiTypes = {
 		}
 		
 		instantTextboxType = {
-			name = "title"
+			name = "bt_open_title"
 			#position = {x=22 y=5}
-			position = {x=3 y=4}
+			position = {x= 6 y=4}
 			font = "hoi_18mbs"
 			text = "[host_transfer_states_tooltip]"
 			maxWidth = 93
@@ -40,7 +40,7 @@ guiTypes = {
 		background = {
 			name = "Background"
 			#spriteType = "GFX_generic_bg_307x113"
-		spriteType = "GFX_diplo_action_imp_relations_bg"
+			spriteType = "GFX_diplo_action_send_attache_bg"
 		}
 		
 		
