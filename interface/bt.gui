@@ -120,7 +120,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "cheat1_text"
-			position = {x=305 y=153}
+			position = {x=303 y=153}
 			font = "hoi_18mbs"
 			text = "[cheat_selected]"
 			maxWidth = 340
@@ -227,7 +227,15 @@ guiTypes = {
 	
 ####################################################################
 
-
+instantTextboxType = {
+	name = "bt_civ_count"
+	position = {x=30 y=85}
+	format = left
+	font = "hoi_24header"
+	text = "[bt_get_correct_state_count]"
+	maxWidth = 250
+	maxHeight = 23
+}
 
 ####################################################################
 
@@ -266,7 +274,7 @@ guiTypes = {
 				position = {x=76 y=18}
 				format = left
 				font = "hoi_24header"
-				text = "24"
+				text = "[?ROOT.bt_selected_civ_cost]"
 				maxWidth = 70
 				maxHeight = 23
 			}

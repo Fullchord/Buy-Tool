@@ -10,6 +10,18 @@
  ST_TOOLTIP_off:0 "§HDeactivate 'Host Tool'§!"
  host_transfer_states_on:0 "Sell Tool: £trigger_no"
  host_transfer_states_off:0 "Sell Tool: £trigger_yes"
+
+ CHEAT_SELECT:0   "Select Timeframe"
+ CHEAT1:0   "3 Months"
+ CHEAT2:0   "6 Months"
+ CHEAT3:0   "9 Months"
+ CHEAT4:0   "12 Months"
+ CHEAT5:0   "15 Months"
+ CHEAT6:0   "18 Months"
+ CHEAT7:0   "21 Months"
+ CHEAT8:0   "24 Months"
+ CHEAT9:0   "27 Months"
+ CHEAT10:0   "30 Months"
  
  bt_current_payment_1:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_1_country.GetNameWithFlag]"
  bt_current_payment_2:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_2_country.GetNameWithFlag]"
@@ -21,3 +33,6 @@
  bt_current_payment_8:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_8_country.GetNameWithFlag]"
  bt_current_payment_9:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_9_country.GetNameWithFlag]"
  bt_current_payment_10:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_10_country.GetNameWithFlag]"
+
+ state_count_is_not_one:0 "[?ROOT.host_marked_states^num|Y0..0] States are Selected"
+ state_count_is_one:0 "[?ROOT.host_marked_states^num|Y0..0] State is Selected"

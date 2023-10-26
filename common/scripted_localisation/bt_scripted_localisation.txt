@@ -1,7 +1,17 @@
 defined_text = {
-	name = get_bt_current_payment_1_country
+	name = bt_get_correct_state_count
 	text = {
-		
+		trigger = {
+			check_variable = {
+				var = ROOT.host_marked_states^num
+				value = 1
+				compare = not_equals
+			}
+		}
+		localization_key = state_count_is_not_one
+	}
+	text = {
+		localization_key = state_count_is_one
 	}
 }
 

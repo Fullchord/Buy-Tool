@@ -14,6 +14,19 @@ scripted_gui = {
 
 		effects = {
 
+			bt_civ_plus_click = {
+				add_to_variable = {
+					var = root.bt_selected_civ_cost
+					value = 1
+				}
+			}
+			bt_civ_minus_click = {
+				add_to_variable = {
+					var = root.bt_selected_civ_cost
+					value = -1
+				}
+			}
+
 			bt_toogle_mark_click = {
 							if={
 								limit={check_variable={host_mark_status=0}}
@@ -25,7 +38,7 @@ scripted_gui = {
 							set_variable={ROOT.first_marked_state=ROOT.host_marked_states^0}
 						}
 
-			clear_all_markings_click = {
+			bt_state_selector_clear_all_markings_click = {
 				ROOT = {
 					for_each_scope_loop={
 						array=host_marked_states
@@ -81,6 +94,20 @@ scripted_gui = {
 			}
 		}
 		triggers = {
+			bt_civ_minus_click_enabled = {
+				check_variable = {
+					var = ROOT.bt_selected_civ_cost
+					value = 1
+					compare = greater_than
+				}
+			}
+			bt_civ_plus_click_enabled = {
+				check_variable = {
+					var = ROOT.bt_selected_civ_cost
+					value = 20
+					compare = less_than
+				}
+			}
 			cheat1_visible={}
 			cheat1_text_visible={}
 			cheat2_visible={ROOT={has_country_flag=cheating}}
@@ -101,6 +128,7 @@ scripted_gui = {
 			cheat8_text_visible={ROOT={has_country_flag=cheating}}
 			cheat9_text_visible={ROOT={has_country_flag=cheating}}
 			cheat10_text_visible={ROOT={has_country_flag=cheating}}
+			
 		}
 	}
 }

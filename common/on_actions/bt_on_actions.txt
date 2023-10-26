@@ -5,6 +5,9 @@ on_actions = {
 				# Current Payment VAR
 				set_variable = { THIS.bt_payment_count = 8 } 
 
+				# Selected civ cost
+				set_variable = { THIS.bt_selected_civ_cost = 1 }
+
 				# Timeout Vars
 				set_variable = { THIS.bt_payment_timout_1 = 0}
 				set_variable = { THIS.bt_payment_timout_2 = 0}
