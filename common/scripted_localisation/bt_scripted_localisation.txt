@@ -21,7 +21,7 @@ defined_text = { # state
 }
 
 defined_text = { # global
-	name = host_transfer_states_tooltip
+	name = bt_open_card_tooltip
 
 	text = {
 		trigger = {

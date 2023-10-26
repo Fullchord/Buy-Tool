@@ -17,7 +17,7 @@ guiTypes = {
 			name = "bt_open_title"
 			position = {x= 6 y=4}
 			font = "hoi_18mbs"
-			text = "[host_transfer_states_tooltip]"
+			text = "[bt_open_card_tooltip]"
 			maxWidth = 93
 			maxHeight = 23
 			format = left
@@ -28,7 +28,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "bt_container"
 		position = {x=1400 y=20}
-		size = { width=650 height=600}
+		size = { width=443 height=400}
 		
 		fade_time = 300
 		fade_type = linear
@@ -36,7 +36,6 @@ guiTypes = {
 		
 		background = {
 			name = "Background"
-			#spriteType = "GFX_generic_bg_307x113"
 			spriteType = "GFX_bt_container_bg"
 		}
 		
@@ -45,7 +44,7 @@ guiTypes = {
 			name = "bt_container_title"
 			position = {x=123 y=23}
 			font = "hoi_24header"
-			text = "Land Buy Tool"
+			text = "Land Sell Tool"
 			maxWidth = 200
 			maxHeight = 23
 			format = centre
