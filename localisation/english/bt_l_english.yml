@@ -1,7 +1,8 @@
 ﻿l_english:
  
- ST_STATE_MARK_FOR_TRANSFER:0 "§HMark State for Transfer§!\nMark the selected state so it can be transfered \n"
+ ST_STATE_MARK_FOR_TRANSFER:0 "§HMark State for Transfer§!\nMark the selected state so it can be sold \n"
  ST_STATE_UNMARK_FOR_TRANSFER:0 "§HUnmark State§!\nUnmarks the selected state\n"
+ bt_send_request_tooltip:0 "§HSend Sell Request §!\nSends a sell request of the marked states to the selected country for the given price and timeframe \n\n§RWARNING: §! This action does not work if either side is currently at war\n\n "
  mark_state_yes:0 ""
  mark_state_no:0 "\n  §RMarked!§!"
  mark_status_marked:0   "     Unmark State "
@@ -10,6 +11,10 @@
  ST_TOOLTIP_off:0 "§HDeactivate 'Host Tool'§!"
  host_transfer_states_on:0 "Sell Tool: £trigger_no"
  host_transfer_states_off:0 "Sell Tool: £trigger_yes"
+ CLEAR_ALL_MARKINGS:0 "§HClear All Marks§!\nEvery marked state will be removed\n\n"
+ CLEAR_ALL_MARKINGS_DELAYED:0 ""
+ bt_civ_plus_tooltip:0 "§HIncrease Civ Cost§!\nIncreases the requested civ amount by 1\n\n"
+ bt_civ_minus_tooltip:0 "§HDecrease Civ Cost§!\nDecreases the requested civ amount by 1\n\n"
 
  CHEAT_SELECT:0   "Select Timeframe"
  CHEAT1:0   "3 Months"

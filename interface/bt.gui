@@ -57,6 +57,7 @@ guiTypes = {
 			position = {x=360 y=178}
 			spriteType = "GFX_idea_received_attache"
 			scale= 0.9
+			pdx_tooltip = "bt_send_request_tooltip"
 		}
 
 		buttonType = {
@@ -253,7 +254,7 @@ instantTextboxType = {
 			}
 			iconType = {
 				name = "bt_civ_icon"
-				position = {x=-1 y=-2}
+				position = {x=-2 y=-2}
 				spriteType = "GFX_endgame_civ_industry_button"
 				scale= 1.35
 			}
@@ -262,12 +263,14 @@ instantTextboxType = {
 				position = {x=48 y=8}
 				spriteType = "GFX_openlog_button"
 				scale= 0.9
+				pdx_tooltip = "bt_civ_plus_tooltip"
 			}
 			buttonType = {
 				name = "bt_civ_minus"
 				position = {x=48 y=30}
 				spriteType = "GFX_closelog_button"
 				scale= 0.9
+				pdx_tooltip = "bt_civ_minus_tooltip"
 			}
 			instantTextboxType = {
 				name = "bt_civ_count"

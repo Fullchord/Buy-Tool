@@ -94,6 +94,27 @@ scripted_gui = {
 			}
 		}
 		triggers = {
+			bt_send_request_click_enabled = {
+				AND = {
+					owner = { #no sendiong to war
+						NOT = {
+							has_war = yes
+						}
+					}
+					ROOT = { #no send while at war
+						NOT = {
+							has_war = yes
+						}
+					}
+					NOT = { #must have selected timeframe
+						check_variable = {Root.selected_cheat=0}
+					}
+					NOT = { #must have at least 1 state selected 
+						check_variable = {ROOT.host_marked_states^num=0}
+					}
+				}
+				
+			}
 			bt_civ_minus_click_enabled = {
 				check_variable = {
 					var = ROOT.bt_selected_civ_cost
