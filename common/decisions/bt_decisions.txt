@@ -1,13 +1,4 @@
 bt_decision_category = {
-    DEBUG_ADD_DYNAMIC_MODEFIER = { #adds the dynamic modefier to the current country
-        priority = 999
-        visible = {
-			is_debug = yes
-		}
-        complete_effect = {
-            add_dynamic_modifier = { modifier = bt_payments }
-        }
-    }
     DEBUG_ADD_1_TO_PAYMENTS_VAR = { # adds 1 to the payments VAR
         priority = 999
         visible = {
@@ -42,7 +33,7 @@ bt_decision_category = {
         }
     }
     DEBUG_SET_PAYMENT_COUNTRY = { # Testing Country Localisation
-        priority = 999`
+        priority = 999
         visible = {  
 			is_debug = yes
 		}
