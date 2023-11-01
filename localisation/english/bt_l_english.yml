@@ -16,17 +16,17 @@
  bt_civ_plus_tooltip:0 "§HIncrease Civ Cost§!\nIncreases the requested civ amount by 1\n\n"
  bt_civ_minus_tooltip:0 "§HDecrease Civ Cost§!\nDecreases the requested civ amount by 1\n\n"
 
- CHEAT_SELECT:0   "Select Timeframe"
- CHEAT1:0   "3 Months"
- CHEAT2:0   "6 Months"
- CHEAT3:0   "9 Months"
- CHEAT4:0   "12 Months"
- CHEAT5:0   "15 Months"
- CHEAT6:0   "18 Months"
- CHEAT7:0   "21 Months"
- CHEAT8:0   "24 Months"
- CHEAT9:0   "27 Months"
- CHEAT10:0   "30 Months"
+ timeframe_SELECT:0   "Select Timeframe"
+ timeframe1:0   "3 Months"
+ timeframe2:0   "6 Months"
+ timeframe3:0   "9 Months"
+ timeframe4:0   "12 Months"
+ timeframe5:0   "15 Months"
+ timeframe6:0   "18 Months"
+ timeframe7:0   "21 Months"
+ timeframe8:0   "24 Months"
+ timeframe9:0   "27 Months"
+ timeframe10:0   "30 Months"
  
  bt_current_payment_1:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_1_country.GetNameWithFlag]"
  bt_current_payment_2:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_2_country.GetNameWithFlag]"
@@ -45,7 +45,8 @@
 
 
 
-
+ bt_event_namespace.1.t:0 "Land Purchase Offer From [FROM.GetName]"
+ bt_event_namespace.1.desc:0 "[FROM.GetNameDefCap] would like to purchace [?FROM.host_marked_states^num|Y0..0] states from you for the price of "
 
 
  bt_event_namespace.1.a:0 "Accept the deal!"

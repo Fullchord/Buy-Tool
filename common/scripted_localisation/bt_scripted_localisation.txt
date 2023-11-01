@@ -72,97 +72,185 @@ defined_text = { # global
 	}
 }
 defined_text = { # global
-	name = cheat_selected
+	name = timeframe_selected
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=0}
-			NOT={Root={has_country_flag=cheating}}
+			check_variable = {Root.selected_timeframe=0}
+			NOT={Root={has_country_flag=timeframe_buttons_open}}
 		}
-		localization_key = CHEAT_SELECT
+		localization_key = timeframe_SELECT
 	}
 	text = {
 		trigger = {
-			OR={check_variable = {Root.selected_cheat=1}
-				Root={has_country_flag=cheating}}
+			OR={check_variable = {Root.selected_timeframe=3}
+				Root={has_country_flag=timeframe_buttons_open}}
 		}
-		localization_key = CHEAT1
+		localization_key = timeframe1
 	}
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=2}
+			check_variable = {Root.selected_timeframe=6}
 		}
-		localization_key = CHEAT2
+		localization_key = timeframe2
 	}
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=3}
+			check_variable = {Root.selected_timeframe=9}
 		}
-		localization_key = CHEAT3
+		localization_key = timeframe3
 	}
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=4}
+			check_variable = {Root.selected_timeframe=12}
 		}
-		localization_key = CHEAT4
+		localization_key = timeframe4
 	}
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=5}
+			check_variable = {Root.selected_timeframe=15}
 		}
-		localization_key = CHEAT5
+		localization_key = timeframe5
 	}
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=6}
+			check_variable = {Root.selected_timeframe=18}
 		}
-		localization_key = CHEAT6
+		localization_key = timeframe6
 	}
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=7}
+			check_variable = {Root.selected_timeframe=21}
 		}
-		localization_key = CHEAT7
+		localization_key = timeframe7
 	}
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=8}
+			check_variable = {Root.selected_timeframe=24}
 		}
-		localization_key = CHEAT8
+		localization_key = timeframe8
 	}
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=9}
+			check_variable = {Root.selected_timeframe=27}
 		}
-		localization_key = CHEAT9
+		localization_key = timeframe9
 	}
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=10}
+			check_variable = {Root.selected_timeframe=30}
 		}
-		localization_key = CHEAT10
+		localization_key = timeframe10
 	}
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=11}
+			check_variable = {Root.selected_timeframe=11}
 		}
-		localization_key = CHEAT11
+		localization_key = timeframe11
 	}
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=12}
+			check_variable = {Root.selected_timeframe=12}
 		}
-		localization_key = CHEAT12
+		localization_key = timeframe12
 	}
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=13}
+			check_variable = {Root.selected_timeframe=13}
 		}
-		localization_key = CHEAT13
+		localization_key = timeframe13
 	}
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=14}
+			check_variable = {Root.selected_timeframe=14}
 		}
-		localization_key = CHEAT14
+		localization_key = timeframe14
+	}
+}
+
+defined_text = { # global
+	name = timeframe_selected_event
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=3}
+		}
+		localization_key = timeframe1
+	}
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=6}
+		}
+		localization_key = timeframe2
+	}
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=9}
+		}
+		localization_key = timeframe3
+	}
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=12}
+		}
+		localization_key = timeframe4
+	}
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=15}
+		}
+		localization_key = timeframe5
+	}
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=18}
+		}
+		localization_key = timeframe6
+	}
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=21}
+		}
+		localization_key = timeframe7
+	}
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=24}
+		}
+		localization_key = timeframe8
+	}
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=27}
+		}
+		localization_key = timeframe9
+	}
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=30}
+		}
+		localization_key = timeframe10
+	}
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=11}
+		}
+		localization_key = timeframe11
+	}
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=12}
+		}
+		localization_key = timeframe12
+	}
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=13}
+		}
+		localization_key = timeframe13
+	}
+	text = {
+		trigger = {
+			check_variable = {FROM.selected_timeframe=14}
+		}
+		localization_key = timeframe14
 	}
 }

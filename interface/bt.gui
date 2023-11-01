@@ -61,69 +61,69 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "cheat1"
+			name = "timeframe1"
 			position = {x=298 y=150}
 			spriteType = "GFX_generic_box_125"
 		}
 		buttonType = {
-			name = "cheat2"
+			name = "timeframe2"
 			position = {x=298 y=174}
 			spriteType = "GFX_generic_box_125"
 			scale= 1
 		}
 		buttonType = {
-			name = "cheat3"
+			name = "timeframe3"
 			position = {x=298 y=198}
 			spriteType = "GFX_generic_box_125"
 			scale= 1
 		}
 		buttonType = {
-			name = "cheat4"
+			name = "timeframe4"
 			position = {x=298 y=222}
 			spriteType = "GFX_generic_box_125"
 			scale= 1
 		}
 		buttonType = {
-			name = "cheat5"
+			name = "timeframe5"
 			position = {x=298 y=246}
 			spriteType = "GFX_generic_box_125"
 			scale= 1
 		}
 		buttonType = {
-			name = "cheat6"
+			name = "timeframe6"
 			position = {x=298 y=270}
 			spriteType = "GFX_generic_box_125"
 			scale= 1
 		}
 		buttonType = {
-			name = "cheat7"
+			name = "timeframe7"
 			position = {x=298 y=294}
 			spriteType = "GFX_generic_box_125"
 			scale= 1
 		}
 		buttonType = {
-			name = "cheat8"
+			name = "timeframe8"
 			position = {x=298 y=318}
 			spriteType = "GFX_generic_box_125"
 			scale= 1
 		}
 		buttonType = {
-			name = "cheat9"
+			name = "timeframe9"
 			position = {x=298 y=342}
 			spriteType = "GFX_generic_box_125"
 			scale= 1
 		}
 		buttonType = {
-			name = "cheat10"
+			name = "timeframe10"
 			position = {x=298 y=366}
 			spriteType = "GFX_generic_box_125"
 			scale= 1
 		}
 		instantTextboxType = {
-			name = "cheat1_text"
+			name = "timeframe1_text"
 			position = {x=303 y=153}
 			font = "hoi_18mbs"
-			text = "[cheat_selected]"
+			text = "[timeframe_selected]"
 			maxWidth = 340
 			maxHeight = 23
 			format = left
@@ -131,10 +131,10 @@ guiTypes = {
 		}
 		
 		instantTextboxType = {
-			name = "cheat2_text"
+			name = "timeframe2_text"
 			position = {x=305 y=177}
 			font = "hoi_18mbs"
-			text = "CHEAT2"
+			text = "timeframe2"
 			maxWidth = 340
 			maxHeight = 23
 			format = left
@@ -142,10 +142,10 @@ guiTypes = {
 		}
 		
 		instantTextboxType = {
-			name = "cheat3_text"
+			name = "timeframe3_text"
 			position = {x=305 y=201}
 			font = "hoi_18mbs"
-			text = "CHEAT3"
+			text = "timeframe3"
 			maxWidth = 340
 			maxHeight = 23
 			format = left
@@ -153,10 +153,10 @@ guiTypes = {
 		}
 		
 		instantTextboxType = {
-			name = "cheat4_text"
+			name = "timeframe4_text"
 			position = {x=305 y=225}
 			font = "hoi_18mbs"
-			text = "CHEAT4"
+			text = "timeframe4"
 			maxWidth = 340
 			maxHeight = 23
 			format = left
@@ -164,10 +164,10 @@ guiTypes = {
 		}
 
 		instantTextboxType = {
-			name = "cheat5_text"
+			name = "timeframe5_text"
 			position = {x=305 y=249}
 			font = "hoi_18mbs"
-			text = "CHEAT5"
+			text = "timeframe5"
 			maxWidth = 340
 			maxHeight = 23
 			format = left
@@ -175,20 +175,20 @@ guiTypes = {
 		}
 
 		instantTextboxType = {
-			name = "cheat6_text"
+			name = "timeframe6_text"
 			position = {x=305 y=273}
 			font = "hoi_18mbs"
-			text = "CHEAT6"
+			text = "timeframe6"
 			maxWidth = 340
 			maxHeight = 23
 			format = left
 			alwaystransparent = yes
 		}
 		instantTextboxType = {
-			name = "cheat7_text"
+			name = "timeframe7_text"
 			position = {x=305 y=297}
 			font = "hoi_18mbs"
-			text = "CHEAT7"
+			text = "timeframe7"
 			maxWidth = 340
 			maxHeight = 23
 			format = left
@@ -196,30 +196,30 @@ guiTypes = {
 		}
 
 		instantTextboxType = {
-			name = "cheat8_text"
+			name = "timeframe8_text"
 			position = {x=305 y=321}
 			font = "hoi_18mbs"
-			text = "CHEAT8"
+			text = "timeframe8"
 			maxWidth = 340
 			maxHeight = 23
 			format = left
 			alwaystransparent = yes
 		}
 		instantTextboxType = {
-			name = "cheat9_text"
+			name = "timeframe9_text"
 			position = {x=305 y=345}
 			font = "hoi_18mbs"
-			text = "CHEAT9"
+			text = "timeframe9"
 			maxWidth = 340
 			maxHeight = 23
 			format = left
 			alwaystransparent = yes
 		}
 		instantTextboxType = {
-			name = "cheat10_text"
+			name = "timeframe10_text"
 			position = {x=305 y=369}
 			font = "hoi_18mbs"
-			text = "CHEAT10"
+			text = "timeframe10"
 			maxWidth = 340
 			maxHeight = 23
 			format = left

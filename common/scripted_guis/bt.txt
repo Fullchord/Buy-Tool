@@ -28,15 +28,15 @@ scripted_gui = {
 			}
 
 			bt_toogle_mark_click = {
-							if={
-								limit={check_variable={host_mark_status=0}}
-								set_variable={host_mark_status=2}
-								add_to_array={ROOT.host_marked_states=THIS}
-							}
-							else={clear_variable=host_mark_status
-								remove_from_array={ROOT.host_marked_states=THIS}}
-							set_variable={ROOT.first_marked_state=ROOT.host_marked_states^0}
-						}
+				if={
+					limit={check_variable={host_mark_status=0}}
+					set_variable={host_mark_status=2}
+					add_to_array={ROOT.host_marked_states=THIS}
+				}
+				else={clear_variable=host_mark_status
+					remove_from_array={ROOT.host_marked_states=THIS}}
+				set_variable={ROOT.first_marked_state=ROOT.host_marked_states^0}
+			}
 
 			bt_state_selector_clear_all_markings_click = {
 				ROOT = {
@@ -46,47 +46,23 @@ scripted_gui = {
 					}
 					clear_array=host_marked_states
 				}
-
-			}
-			
-			add_cheat_click = {
-
-				set_variable = { ROOT.taker = this}
-				var:taker = {owner={set_variable={Root.target_country = this}
-						if={limit={check_variable={Root.selected_cheat=1}} add_offsite_building = { type = arms_factory level = 1 }}
-						if={limit={check_variable={Root.selected_cheat=2}} add_offsite_building = { type = arms_factory level = -1 }}
-						if={limit={check_variable={Root.selected_cheat=3}} add_offsite_building = { type = industrial_complex level = 1 }}
-						if={limit={check_variable={Root.selected_cheat=4}} add_offsite_building = { type = industrial_complex level = -1 }}
-						if={limit={check_variable={Root.selected_cheat=5}} add_political_power = 50 }
-						if={limit={check_variable={Root.selected_cheat=6}} add_political_power = -50 }
-						if={limit={check_variable={Root.selected_cheat=7}} army_experience = 50 }
-						if={limit={check_variable={Root.selected_cheat=8}} air_experience = 50 }
-						if={limit={check_variable={Root.selected_cheat=9}} navy_experience = 50 }
-						if={limit={check_variable={Root.selected_cheat=10}} add_timed_idea = { idea = hosttool_efficency days = 10 }}
-						}}
-				GER={
-					set_variable={this.target_country=Root.target_country}
-					set_variable={this.selected_cheat=Root.selected_cheat}
-					news_event={id=hosttool.1}}
-				clear_variable =ROOT.taker
-
 			}
 
 
 			
 
 
-			cheat1_click={if={limit={Root={has_country_flag=cheating}} set_variable={Root.selected_cheat=1} ROOT={clr_country_flag=cheating}} else={ROOT={set_country_flag=cheating}}
+			timeframe1_click={if={limit={Root={has_country_flag=timeframe_buttons_open}} set_variable={Root.selected_timeframe=3} ROOT={clr_country_flag=timeframe_buttons_open}} else={ROOT={set_country_flag=timeframe_buttons_open}}
 			}
-			cheat2_click={set_variable={Root.selected_cheat=2} ROOT={clr_country_flag=cheating}}
-			cheat3_click={set_variable={Root.selected_cheat=3} ROOT={clr_country_flag=cheating}}
-			cheat4_click={set_variable={Root.selected_cheat=4} ROOT={clr_country_flag=cheating}}
-			cheat5_click={set_variable={Root.selected_cheat=5} ROOT={clr_country_flag=cheating}}
-			cheat6_click={set_variable={Root.selected_cheat=6} ROOT={clr_country_flag=cheating}}
-			cheat7_click={set_variable={Root.selected_cheat=7} ROOT={clr_country_flag=cheating}}
-			cheat8_click={set_variable={Root.selected_cheat=8} ROOT={clr_country_flag=cheating}}
-			cheat9_click={set_variable={Root.selected_cheat=9} ROOT={clr_country_flag=cheating}}
-			cheat10_click={set_variable={Root.selected_cheat=10} ROOT={clr_country_flag=cheating}}
+			timeframe2_click={set_variable={Root.selected_timeframe=6} ROOT={clr_country_flag=timeframe_buttons_open}}
+			timeframe3_click={set_variable={Root.selected_timeframe=9} ROOT={clr_country_flag=timeframe_buttons_open}}
+			timeframe4_click={set_variable={Root.selected_timeframe=12} ROOT={clr_country_flag=timeframe_buttons_open}}
+			timeframe5_click={set_variable={Root.selected_timeframe=15} ROOT={clr_country_flag=timeframe_buttons_open}}
+			timeframe6_click={set_variable={Root.selected_timeframe=18} ROOT={clr_country_flag=timeframe_buttons_open}}
+			timeframe7_click={set_variable={Root.selected_timeframe=21} ROOT={clr_country_flag=timeframe_buttons_open}}
+			timeframe8_click={set_variable={Root.selected_timeframe=24} ROOT={clr_country_flag=timeframe_buttons_open}}
+			timeframe9_click={set_variable={Root.selected_timeframe=27} ROOT={clr_country_flag=timeframe_buttons_open}}
+			timeframe10_click={set_variable={Root.selected_timeframe=30} ROOT={clr_country_flag=timeframe_buttons_open}}
 		}
 		properties = {
 			bt_toogle_mark={
@@ -107,7 +83,7 @@ scripted_gui = {
 						}
 					}
 					NOT = { #must have selected timeframe
-						check_variable = {Root.selected_cheat=0}
+						check_variable = {Root.selected_timeframe=0}
 					}
 					NOT = { #must have at least 1 state selected 
 						check_variable = {ROOT.host_marked_states^num=0}
@@ -129,26 +105,26 @@ scripted_gui = {
 					compare = less_than
 				}
 			}
-			cheat1_visible={}
-			cheat1_text_visible={}
-			cheat2_visible={ROOT={has_country_flag=cheating}}
-			cheat3_visible={ROOT={has_country_flag=cheating}}
-			cheat4_visible={ROOT={has_country_flag=cheating}}
-			cheat5_visible={ROOT={has_country_flag=cheating}}
-			cheat6_visible={ROOT={has_country_flag=cheating}}
-			cheat7_visible={ROOT={has_country_flag=cheating}}
-			cheat8_visible={ROOT={has_country_flag=cheating}}
-			cheat9_visible={ROOT={has_country_flag=cheating}}
-			cheat10_visible={ROOT={has_country_flag=cheating}}
-			cheat2_text_visible={ROOT={has_country_flag=cheating}}
-			cheat3_text_visible={ROOT={has_country_flag=cheating}}
-			cheat4_text_visible={ROOT={has_country_flag=cheating}}
-			cheat5_text_visible={ROOT={has_country_flag=cheating}}
-			cheat6_text_visible={ROOT={has_country_flag=cheating}}
-			cheat7_text_visible={ROOT={has_country_flag=cheating}}
-			cheat8_text_visible={ROOT={has_country_flag=cheating}}
-			cheat9_text_visible={ROOT={has_country_flag=cheating}}
-			cheat10_text_visible={ROOT={has_country_flag=cheating}}
+			timeframe1_visible={}
+			timeframe1_text_visible={}
+			timeframe2_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe3_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe4_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe5_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe6_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe7_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe8_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe9_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe10_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe2_text_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe3_text_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe4_text_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe5_text_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe6_text_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe7_text_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe8_text_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe9_text_visible={ROOT={has_country_flag=timeframe_buttons_open}}
+			timeframe10_text_visible={ROOT={has_country_flag=timeframe_buttons_open}}
 			
 		}
 	}

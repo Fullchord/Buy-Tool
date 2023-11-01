@@ -2,8 +2,8 @@ add_namespace = bt_event_namespace
 
 country_event = { #ask target country if they want to acept deal.
 	id = bt_event_namespace.1
-	title = bt_event_namespace.1.t
-	desc = bt_event_namespace.1.desc
+	title = "Land Sell Offer From [FROM.GetNameDef]"
+	desc = "[FROM.GetNameDefCap] would like to sell [?FROM.host_marked_states^num|R0..0] states to us for the price of [?FROM.bt_selected_civ_cost|R0..0] civilian factories for [?FROM.selected_timeframe] months."
 
 	is_triggered_only = yes #triggered by GUI
 
@@ -12,14 +12,14 @@ country_event = { #ask target country if they want to acept deal.
 	}
 
 	option = { #yes (accept deal)
-		name = "Release [FROM.GetName] as puppet"
+		name = "Accept the offer"
 		ai_chance = { # AI will accept TODO (remove for launch)
 			factor = 100
 		}
 		
 	}
 	option = { #no (deny deal)
-		name = "Release [ROOT.GetName] as puppet"
+		name = "Deny the offer"
 		ai_chance = {
 			factor = 0
 		}
