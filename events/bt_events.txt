@@ -8,7 +8,8 @@ country_event = { #ask target country if they want to acept deal.
 	is_triggered_only = yes #triggered by GUI
 
 	immediate = {
-
+		bt_select_next_payment_slot = yes #selects next payment slot open
+		bt_save_payment_data = yes #save data to local vars
 	}
 
 	option = { #yes (accept deal)
@@ -16,7 +17,7 @@ country_event = { #ask target country if they want to acept deal.
 		ai_chance = { # AI will accept TODO (remove for launch)
 			factor = 100
 		}
-		
+		bt_start_next_incomming_payment = yes
 	}
 	option = { #no (deny deal)
 		name = "Deny the offer"

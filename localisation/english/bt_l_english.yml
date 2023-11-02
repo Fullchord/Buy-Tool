@@ -28,7 +28,7 @@
  timeframe9:0   "27 Months"
  timeframe10:0   "30 Months"
  
- bt_current_payment_1:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_1_country.GetNameWithFlag]"
+ bt_current_incoming_payment_1:0 "[?ROOT.bt_incomming_civ_cost_1] £GFX_civ_factory  Payment from [?bt_incomming_civ_payment_country_1.GetNameWithFlag]"
  bt_current_payment_2:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_2_country.GetNameWithFlag]"
  bt_current_payment_3:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_3_country.GetNameWithFlag]"
  bt_current_payment_4:0 "X £GFX_civ_factory  Payment to [?bt_current_payment_4_country.GetNameWithFlag]"

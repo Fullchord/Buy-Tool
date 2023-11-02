@@ -29,7 +29,7 @@ bt_decision_category = {
 			is_debug = yes
 		}
         complete_effect = {
-            bt_start_new_payment = yes
+
         }
     }
     DEBUG_SET_PAYMENT_COUNTRY = { # Testing Country Localisation
@@ -44,205 +44,324 @@ bt_decision_category = {
             }
         }
     }
-    bt_current_payment_1 = {
+    bt_current_incoming_payment_1 = {
         activation = { always = no } # activated by event 
         icon = mission_icon
         is_good = yes
-        days_mission_timeout = THIS.bt_payment_timout_1
+        days_mission_timeout = THIS.bt_incomming_payment_timeframe_1
         selectable_mission = no
         available = {
             always = no
         }
         timeout_effect = {
-            subtract_from_variable = {
-                var = ROOT.bt_payment_count
-                value = 1
-            }
             set_variable = {
-                var = ROOT.bt_payment_timout_1
+                var = ROOT.bt_incomming_payment_timeframe_1
                 value = 0
+            }
+            set_temp_variable = {
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_1
+            }
+            subtract_from_temp_variable = { # set to 0
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_1
+            }
+            subtract_from_temp_variable = { # set to negative
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_1
+            }
+            add_offsite_building = {
+                type = industrial_complex
+                level = civ_removal_cost
             }
         }
     }
-    bt_current_payment_2 = {
+    bt_current_incoming_payment_2 = {
         activation = { always = no } # activated by event 
         icon = mission_icon
         is_good = yes
-        days_mission_timeout = THIS.bt_payment_timout_2
+        days_mission_timeout = THIS.bt_incomming_payment_timeframe_2
         selectable_mission = no
         available = {
             always = no
         }
         timeout_effect = {
-            subtract_from_variable = {
-                var = ROOT.bt_payment_count
-                value = 1
-            }
             set_variable = {
-                var = ROOT.bt_payment_timout_2
+                var = ROOT.bt_incoming_payment_timout_2
                 value = 0
+            }
+            set_temp_variable = {
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_2
+            }
+            subtract_from_temp_variable = { # set to 0
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_2
+            }
+            subtract_from_temp_variable = { # set to negative
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_2
+            }
+            add_offsite_building = {
+                type = industrial_complex
+                level = civ_removal_cost
             }
         }
     }
-    bt_current_payment_3 = {
+    bt_current_incoming_payment_3 = {
         activation = { always = no } # activated by event 
         icon = mission_icon
         is_good = yes
-        days_mission_timeout = THIS.bt_payment_timout_3
+        days_mission_timeout = THIS.bt_incomming_payment_timeframe_3
         selectable_mission = no
         available = {
             always = no
         }
         timeout_effect = {
-            subtract_from_variable = {
-                var = ROOT.bt_payment_count
-                value = 1
-            }
             set_variable = {
-                var = ROOT.bt_payment_timout_3
+                var = ROOT.bt_incoming_payment_timout_3
                 value = 0
+            }
+            set_temp_variable = {
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_3
+            }
+            subtract_from_temp_variable = { # set to 0
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_3
+            }
+            subtract_from_temp_variable = { # set to negative
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_3
+            }
+            add_offsite_building = {
+                type = industrial_complex
+                level = civ_removal_cost
             }
         }
     }
-    bt_current_payment_4 = {
+    bt_current_incoming_payment_4 = {
         activation = { always = no } # activated by event 
         icon = mission_icon
         is_good = yes
-        days_mission_timeout = THIS.bt_payment_timout_4
+        days_mission_timeout = THIS.bt_incomming_payment_timeframe_4
         selectable_mission = no
         available = {
             always = no
         }
         timeout_effect = {
-            subtract_from_variable = {
-                var = ROOT.bt_payment_count
-                value = 1
-            }
             set_variable = {
-                var = ROOT.bt_payment_timout_4
+                var = ROOT.bt_incoming_payment_timout_4
                 value = 0
+            }
+            set_temp_variable = {
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_4
+            }
+            subtract_from_temp_variable = { # set to 0
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_4
+            }
+            subtract_from_temp_variable = { # set to negative
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_4
+            }
+            add_offsite_building = {
+                type = industrial_complex
+                level = civ_removal_cost
             }
         }
     }
-    bt_current_payment_5 = {
+    bt_current_incoming_payment_5 = {
         activation = { always = no } # activated by event 
         icon = mission_icon
         is_good = yes
-        days_mission_timeout = THIS.bt_payment_timout_5
+        days_mission_timeout = THIS.bt_incomming_payment_timeframe_5
         selectable_mission = no
         available = {
             always = no
         }
         timeout_effect = {
-            subtract_from_variable = {
-                var = ROOT.bt_payment_count
-                value = 1
-            }
             set_variable = {
-                var = ROOT.bt_payment_timout_5
+                var = ROOT.bt_incoming_payment_timout_5
                 value = 0
+            }
+            set_temp_variable = {
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_5
+            }
+            subtract_from_temp_variable = { # set to 0
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_5
+            }
+            subtract_from_temp_variable = { # set to negative
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_5
+            }
+            add_offsite_building = {
+                type = industrial_complex
+                level = civ_removal_cost
             }
         }
     }
-    bt_current_payment_6 = {
+    bt_current_incoming_payment_6 = {
         activation = { always = no } # activated by event 
         icon = mission_icon
         is_good = yes
-        days_mission_timeout = THIS.bt_payment_timout_6
+        days_mission_timeout = THIS.bt_incomming_payment_timeframe_6
         selectable_mission = no
         available = {
             always = no
         }
         timeout_effect = {
-            subtract_from_variable = {
-                var = ROOT.bt_payment_count
-                value = 1
-            }
             set_variable = {
-                var = ROOT.bt_payment_timout_6
+                var = ROOT.bt_incoming_payment_timout_6
                 value = 0
+            }
+            set_temp_variable = {
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_6
+            }
+            subtract_from_temp_variable = { # set to 0
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_6
+            }
+            subtract_from_temp_variable = { # set to negative
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_6
+            }
+            add_offsite_building = {
+                type = industrial_complex
+                level = civ_removal_cost
             }
         }
     }
-    bt_current_payment_7 = {
+    bt_current_incoming_payment_7 = {
         activation = { always = no } # activated by event 
         icon = mission_icon
         is_good = yes
-        days_mission_timeout = THIS.bt_payment_timout_7
+        days_mission_timeout = THIS.bt_incomming_payment_timeframe_7
         selectable_mission = no
         available = {
             always = no
         }
         timeout_effect = {
-            subtract_from_variable = {
-                var = ROOT.bt_payment_count
-                value = 1
-            }
             set_variable = {
-                var = ROOT.bt_payment_timout_7
+                var = ROOT.bt_incoming_payment_timout_7
                 value = 0
+            }
+            set_temp_variable = {
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_7
+            }
+            subtract_from_temp_variable = { # set to 0
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_7
+            }
+            subtract_from_temp_variable = { # set to negative
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_7
+            }
+            add_offsite_building = {
+                type = industrial_complex
+                level = civ_removal_cost
             }
         }
     }
-    bt_current_payment_8 = {
+    bt_current_incoming_payment_8 = {
         activation = { always = no } # activated by event 
         icon = mission_icon
         is_good = yes
-        days_mission_timeout = THIS.bt_payment_timout_8
+        days_mission_timeout = THIS.bt_incomming_payment_timeframe_8
         selectable_mission = no
         available = {
             always = no
         }
         timeout_effect = {
-            subtract_from_variable = {
-                var = ROOT.bt_payment_count
-                value = 1
-            }
             set_variable = {
-                var = ROOT.bt_payment_timout_8
+                var = ROOT.bt_incoming_payment_timout_8
                 value = 0
+            }
+            set_temp_variable = {
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_8
+            }
+            subtract_from_temp_variable = { # set to 0
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_8
+            }
+            subtract_from_temp_variable = { # set to negative
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_8
+            }
+            add_offsite_building = {
+                type = industrial_complex
+                level = civ_removal_cost
             }
         }
     }
-    bt_current_payment_9 = {
+    bt_current_incoming_payment_9 = {
         activation = { always = no } # activated by event 
         icon = mission_icon
         is_good = yes
-        days_mission_timeout = THIS.bt_payment_timout_9
+        days_mission_timeout = THIS.bt_incomming_payment_timeframe_9
         selectable_mission = no
         available = {
             always = no
         }
         timeout_effect = {
-            subtract_from_variable = {
-                var = ROOT.bt_payment_count
-                value = 1
-            }
             set_variable = {
-                var = ROOT.bt_payment_timout_9
+                var = ROOT.bt_incoming_payment_timout_9
                 value = 0
+            }
+            set_temp_variable = {
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_9
+            }
+            subtract_from_temp_variable = { # set to 0
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_9
+            }
+            subtract_from_temp_variable = { # set to negative
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_9
+            }
+            add_offsite_building = {
+                type = industrial_complex
+                level = civ_removal_cost
             }
         }
     }
-    bt_current_payment_10 = {
+    bt_current_incoming_payment_10 = {
         activation = { always = no } # activated by event 
         icon = mission_icon
         is_good = yes
-        days_mission_timeout = THIS.bt_payment_timout_10
+        days_mission_timeout = THIS.bt_incomming_payment_timeframe_10
         selectable_mission = no
         available = {
             always = no
         }
         timeout_effect = {
-            subtract_from_variable = {
-                var = ROOT.bt_payment_count
-                value = 1
-            }
             set_variable = {
-                var = ROOT.bt_payment_timout_10
+                var = ROOT.bt_incoming_payment_timout_10
                 value = 0
+            }
+            set_temp_variable = {
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_10
+            }
+            subtract_from_temp_variable = { # set to 0
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_10
+            }
+            subtract_from_temp_variable = { # set to negative
+                var = civ_removal_cost
+                value = ROOT.bt_incomming_civ_cost_10
+            }
+            add_offsite_building = {
+                type = industrial_complex
+                level = civ_removal_cost
             }
         }
     }
-
 }
