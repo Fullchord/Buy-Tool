@@ -155,6 +155,10 @@ bt_save_payment_data = {
 			var = ROOT.bt_incomming_civ_payment_country_1
 			value = FROM
 		}
+		for_each_scope_loop = {
+			array = FROM.host_marked_states
+			add_to_array={ROOT.bt_incoming_selected_states_1=THIS}
+		}
 	}
 	else_if = {
 		limit = { 
@@ -178,6 +182,10 @@ bt_save_payment_data = {
 		}
 		set_variable = { # set country
 			var = ROOT.bt_incomming_civ_payment_country_2
+		}
+		for_each_scope_loop = {
+			array = FROM.host_marked_states
+			add_to_array={ROOT.bt_incoming_selected_states_2=THIS}
 		}
 	}
 	else_if = {
@@ -203,6 +211,10 @@ bt_save_payment_data = {
 		set_variable = { # set country
 			var = ROOT.bt_incomming_civ_payment_country_3
 		}
+		for_each_scope_loop = {
+			array = FROM.host_marked_states
+			add_to_array={ROOT.bt_incoming_selected_states_3=THIS}
+		}
 	}
 	else_if = {
 		limit = { 
@@ -226,6 +238,10 @@ bt_save_payment_data = {
 		}
 		set_variable = { # set country
 			var = ROOT.bt_incomming_civ_payment_country_4
+		}
+		for_each_scope_loop = {
+			array = FROM.host_marked_states
+			add_to_array={ROOT.bt_incoming_selected_states_4=THIS}
 		}
 	}
 	else_if = {
@@ -251,6 +267,10 @@ bt_save_payment_data = {
 		set_variable = { # set country
 			var = ROOT.bt_incomming_civ_payment_country_5
 		}
+		for_each_scope_loop = {
+			array = FROM.host_marked_states
+			add_to_array={ROOT.bt_incoming_selected_states_5=THIS}
+		}
 	}
 	else_if = {
 		limit = { 
@@ -274,6 +294,10 @@ bt_save_payment_data = {
 		}
 		set_variable = { # set country
 			var = ROOT.bt_incomming_civ_payment_country_6
+		}
+		for_each_scope_loop = {
+			array = FROM.host_marked_states
+			add_to_array={ROOT.bt_incoming_selected_states_6=THIS}
 		}
 	}
 	else_if = {
@@ -299,6 +323,10 @@ bt_save_payment_data = {
 		set_variable = { # set country
 			var = ROOT.bt_incomming_civ_payment_country_7
 		}
+		for_each_scope_loop = {
+			array = FROM.host_marked_states
+			add_to_array={ROOT.bt_incoming_selected_states_7=THIS}
+		}
 	}
 	else_if = {
 		limit = { 
@@ -322,6 +350,10 @@ bt_save_payment_data = {
 		}
 		set_variable = { # set country
 			var = ROOT.bt_incomming_civ_payment_country_8
+		}
+		for_each_scope_loop = {
+			array = FROM.host_marked_states
+			add_to_array={ROOT.bt_incoming_selected_states_8=THIS}
 		}
 	}
 	else_if = {
@@ -347,6 +379,10 @@ bt_save_payment_data = {
 		set_variable = { # set country
 			var = ROOT.bt_incomming_civ_payment_country_9
 		}
+		for_each_scope_loop = {
+			array = FROM.host_marked_states
+			add_to_array={ROOT.bt_incoming_selected_states_9=THIS}
+		}
 	}
 	else_if = {
 		limit = { 
@@ -371,6 +407,10 @@ bt_save_payment_data = {
 		set_variable = { # set country
 			var = ROOT.bt_incomming_civ_payment_country_10
 		}
+		for_each_scope_loop = {
+			array = FROM.host_marked_states
+			add_to_array={ROOT.bt_incoming_selected_states_10=THIS}
+		}
 	}
 }
 
@@ -381,6 +421,12 @@ bt_start_next_incomming_payment = {
 				var = ROOT.bt_next_open_slot
 				value = 1
 				compare = equals
+			}
+		}
+		for_each_scope_loop = {
+			array = ROOT.bt_incoming_selected_states_1
+			THIS = {
+				transfer_state_to = ROOT
 			}
 		}
 		add_offsite_building = {
@@ -397,6 +443,12 @@ bt_start_next_incomming_payment = {
 				compare = equals
 			}
 		}
+		for_each_scope_loop = {
+			array = ROOT.bt_incoming_selected_states_2
+			THIS = {
+				transfer_state_to = ROOT
+			}
+		}
 		add_offsite_building = {
 			type = industrial_complex
 			level = ROOT.bt_incomming_civ_cost_2
@@ -409,6 +461,12 @@ bt_start_next_incomming_payment = {
 				var = ROOT.bt_next_open_slot
 				value = 3
 				compare = equals
+			}
+		}
+		for_each_scope_loop = {
+			array = ROOT.bt_incoming_selected_states_3
+			THIS = {
+				transfer_state_to = ROOT
 			}
 		}
 		add_offsite_building = {
@@ -425,6 +483,12 @@ bt_start_next_incomming_payment = {
 				compare = equals
 			}
 		}
+		for_each_scope_loop = {
+			array = ROOT.bt_incoming_selected_states_4
+			THIS = {
+				transfer_state_to = ROOT
+			}
+		}
 		add_offsite_building = {
 			type = industrial_complex
 			level = ROOT.bt_incomming_civ_cost_4
@@ -437,6 +501,12 @@ bt_start_next_incomming_payment = {
 				var = ROOT.bt_next_open_slot
 				value = 5
 				compare = equals
+			}
+		}
+		for_each_scope_loop = {
+			array = ROOT.bt_incoming_selected_states_5
+			THIS = {
+				transfer_state_to = ROOT
 			}
 		}
 		add_offsite_building = {
@@ -453,6 +523,12 @@ bt_start_next_incomming_payment = {
 				compare = equals
 			}
 		}
+		for_each_scope_loop = {
+			array = ROOT.bt_incoming_selected_states_6
+			THIS = {
+				transfer_state_to = ROOT
+			}
+		}
 		add_offsite_building = {
 			type = industrial_complex
 			level = ROOT.bt_incomming_civ_cost_6
@@ -465,6 +541,12 @@ bt_start_next_incomming_payment = {
 				var = ROOT.bt_next_open_slot
 				value = 7
 				compare = equals
+			}
+		}
+		for_each_scope_loop = {
+			array = ROOT.bt_incoming_selected_states_7
+			THIS = {
+				transfer_state_to = ROOT
 			}
 		}
 		add_offsite_building = {
@@ -481,6 +563,12 @@ bt_start_next_incomming_payment = {
 				compare = equals
 			}
 		}
+		for_each_scope_loop = {
+			array = ROOT.bt_incoming_selected_states_8
+			THIS = {
+				transfer_state_to = ROOT
+			}
+		}
 		add_offsite_building = {
 			type = industrial_complex
 			level = ROOT.bt_incomming_civ_cost_8
@@ -495,6 +583,12 @@ bt_start_next_incomming_payment = {
 				compare = equals
 			}
 		}
+		for_each_scope_loop = {
+			array = ROOT.bt_incoming_selected_states_9
+			THIS = {
+				transfer_state_to = ROOT
+			}
+		}
 		add_offsite_building = {
 			type = industrial_complex
 			level = ROOT.bt_incomming_civ_cost_9
@@ -507,6 +601,12 @@ bt_start_next_incomming_payment = {
 				var = ROOT.bt_next_open_slot
 				value = 10
 				compare = equals
+			}
+		}
+		for_each_scope_loop = {
+			array = ROOT.bt_incoming_selected_states_10
+			THIS = {
+				transfer_state_to = ROOT
 			}
 		}
 		add_offsite_building = {
