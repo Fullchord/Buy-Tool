@@ -63,6 +63,15 @@ scripted_gui = {
 			timeframe8_click={set_variable={Root.selected_timeframe=24} ROOT={clr_country_flag=timeframe_buttons_open}}
 			timeframe9_click={set_variable={Root.selected_timeframe=27} ROOT={clr_country_flag=timeframe_buttons_open}}
 			timeframe10_click={set_variable={Root.selected_timeframe=30} ROOT={clr_country_flag=timeframe_buttons_open}}
+
+			bt_send_request_click = {
+				ROOT = {
+					set_country_flag = bt_locked
+				}
+				owner = {
+					country_event = bt_event_namespace.1
+				}
+			}
 		}
 		properties = {
 			bt_toogle_mark={
@@ -70,6 +79,25 @@ scripted_gui = {
 			}
 		}
 		triggers = {
+			bt_toogle_mark_click_enabled = {
+				AND = {
+					OR = {
+						is_owned_and_controlled_by = ROOT #owned by self
+						AND = {
+							owner = { # no player puppets
+								is_ai = yes
+							}
+							owner = { # is a puppet
+								is_subject_of = ROOT
+							}
+						}
+					}
+					NOT = { #no current offers
+						has_country_flag = bt_locked
+					}
+				}
+				
+			}
 			bt_send_request_click_enabled = {
 				AND = {
 					owner = { #no sendiong to war
@@ -83,7 +111,7 @@ scripted_gui = {
 						}
 					}
 					NOT = { #no sending to self
-						is_controlled_by = ROOT
+						is_owned_and_controlled_by = ROOT
 					}
 					ROOT = { #no send while at war
 						NOT = {
@@ -92,9 +120,12 @@ scripted_gui = {
 					}
 					NOT = { #must have selected timeframe
 						check_variable = {Root.selected_timeframe=0}
-					}
+				 	}
 					NOT = { #must have at least 1 state selected 
 						check_variable = {ROOT.bt_marked_states^num=0}
+					}
+					NOT = { #no current offers
+						has_country_flag = bt_locked
 					}
 				}
 				
@@ -105,12 +136,28 @@ scripted_gui = {
 					value = 1
 					compare = greater_than
 				}
+				NOT = { #no current offers
+					has_country_flag = bt_locked
+				}
 			}
 			bt_civ_plus_click_enabled = {
 				check_variable = {
 					var = ROOT.bt_selected_civ_cost
 					value = 20
 					compare = less_than
+				}
+				NOT = { #no current offers
+					has_country_flag = bt_locked
+				}
+			}
+			timeframe1_click_enabled = {
+				NOT = { #no current offers
+					has_country_flag = bt_locked
+				}
+			}
+			bt_state_selector_clear_all_markings_click_enabled = {
+				NOT = { #no current offers
+					has_country_flag = bt_locked
 				}
 			}
 			timeframe1_visible={}
