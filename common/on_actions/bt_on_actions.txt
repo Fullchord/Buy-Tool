@@ -7,16 +7,16 @@ on_actions = {
 				set_variable = { THIS.bt_selected_civ_cost = 1 }
 
 				# Timeout Vars
-				set_variable = { THIS.bt_incoming_payment_timout_1 = 0}
-				set_variable = { THIS.bt_incoming_payment_timout_2 = 0}
-				set_variable = { THIS.bt_incoming_payment_timout_3 = 0}
-				set_variable = { THIS.bt_incoming_payment_timout_4 = 0}
-				set_variable = { THIS.bt_incoming_payment_timout_5 = 0}
-				set_variable = { THIS.bt_incoming_payment_timout_6 = 0}
-				set_variable = { THIS.bt_incoming_payment_timout_7 = 0}
-				set_variable = { THIS.bt_incoming_payment_timout_8 = 0}
-				set_variable = { THIS.bt_incoming_payment_timout_9 = 0}
-				set_variable = { THIS.bt_incoming_payment_timout_10 = 0}
+				set_variable = { THIS.bt_incomming_payment_timeframe_1 = 0}
+				set_variable = { THIS.bt_incomming_payment_timeframe_2 = 0}
+				set_variable = { THIS.bt_incomming_payment_timeframe_3 = 0}
+				set_variable = { THIS.bt_incomming_payment_timeframe_4 = 0}
+				set_variable = { THIS.bt_incomming_payment_timeframe_5 = 0}
+				set_variable = { THIS.bt_incomming_payment_timeframe_6 = 0}
+				set_variable = { THIS.bt_incomming_payment_timeframe_7 = 0}
+				set_variable = { THIS.bt_incomming_payment_timeframe_8 = 0}
+				set_variable = { THIS.bt_incomming_payment_timeframe_9 = 0}
+				set_variable = { THIS.bt_incomming_payment_timeframe_10 = 0}
 			}
 		}
 	}

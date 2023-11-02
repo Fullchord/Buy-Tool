@@ -24,7 +24,5 @@ country_event = { #ask target country if they want to acept deal.
 		ai_chance = {
 			factor = 0
 		}
-
-		
 	}
 }

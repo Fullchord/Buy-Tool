@@ -2,7 +2,7 @@ bt_select_next_payment_slot = {
 	if = {
 		limit = {
 			check_variable = {
-				var = ROOT.bt_incoming_payment_timout_1
+				var = ROOT.bt_incomming_payment_timeframe_1
 				value = 0
 				compare = equals
 			}
@@ -15,7 +15,7 @@ bt_select_next_payment_slot = {
 	else_if = {
 		limit = { 
 			check_variable = {
-				var = ROOT.bt_incoming_payment_timout_2
+				var = ROOT.bt_incomming_payment_timeframe_2
 				value = 0
 				compare = equals
 			}
@@ -28,7 +28,7 @@ bt_select_next_payment_slot = {
 	else_if = {
 		limit = { 
 			check_variable = {
-				var = ROOT.bt_incoming_payment_timout_3
+				var = ROOT.bt_incomming_payment_timeframe_3
 				value = 0
 				compare = equals
 			}
@@ -41,7 +41,7 @@ bt_select_next_payment_slot = {
 	else_if = {
 		limit = { 
 			check_variable = {
-				var = ROOT.bt_incoming_payment_timout_4
+				var = ROOT.bt_incomming_payment_timeframe_4
 				value = 0
 				compare = equals
 			}
@@ -54,7 +54,7 @@ bt_select_next_payment_slot = {
 	else_if = {
 		limit = { 
 			check_variable = {
-				var = ROOT.bt_incoming_payment_timout_5
+				var = ROOT.bt_incomming_payment_timeframe_5
 				value = 0
 				compare = equals
 			}
@@ -67,7 +67,7 @@ bt_select_next_payment_slot = {
 	else_if = {
 		limit = { 
 			check_variable = {
-				var = ROOT.bt_incoming_payment_timout_6
+				var = ROOT.bt_incomming_payment_timeframe_6
 				value = 0
 				compare = equals
 			}
@@ -80,7 +80,7 @@ bt_select_next_payment_slot = {
 	else_if = {
 		limit = { 
 			check_variable = {
-				var = ROOT.bt_incoming_payment_timout_7
+				var = ROOT.bt_incomming_payment_timeframe_7
 				value = 0
 				compare = equals
 			}
@@ -93,7 +93,7 @@ bt_select_next_payment_slot = {
 	else_if = {
 		limit = { 
 			check_variable = {
-				var = ROOT.bt_incoming_payment_timout_8
+				var = ROOT.bt_incomming_payment_timeframe_8
 				value = 0
 				compare = equals
 			}
@@ -106,7 +106,7 @@ bt_select_next_payment_slot = {
 	else_if = {
 		limit = { 
 			check_variable = {
-				var = ROOT.bt_incoming_payment_timout_9
+				var = ROOT.bt_incomming_payment_timeframe_9
 				value = 0
 				compare = equals
 			}
@@ -119,7 +119,7 @@ bt_select_next_payment_slot = {
 	else_if = {
 		limit = { 
 			check_variable = {
-				var = ROOT.bt_incoming_payment_timout_20
+				var = ROOT.bt_incomming_payment_timeframe_10
 				value = 0
 				compare = equals
 			}
