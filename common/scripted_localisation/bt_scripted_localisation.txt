@@ -3,7 +3,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				var = ROOT.host_marked_states^num
+				var = ROOT.bt_marked_states^num
 				value = 1
 				compare = not_equals
 			}
@@ -59,7 +59,7 @@ defined_text = { # global
 }
 
 defined_text = { # global
-	name = host_mark_status
+	name = bt_mark_status
 
 	text = {
 		trigger = {

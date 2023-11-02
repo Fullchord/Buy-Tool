@@ -29,22 +29,22 @@ scripted_gui = {
 
 			bt_toogle_mark_click = {
 				if={
-					limit={check_variable={host_mark_status=0}}
-					set_variable={host_mark_status=2}
-					add_to_array={ROOT.host_marked_states=THIS}
+					limit={check_variable={bt_mark_status=0}}
+					set_variable={bt_mark_status=2}
+					add_to_array={ROOT.bt_marked_states=THIS}
 				}
-				else={clear_variable=host_mark_status
-					remove_from_array={ROOT.host_marked_states=THIS}}
-				set_variable={ROOT.first_marked_state=ROOT.host_marked_states^0}
+				else={clear_variable=bt_mark_status
+					remove_from_array={ROOT.bt_marked_states=THIS}}
+				set_variable={ROOT.first_marked_state=ROOT.bt_marked_states^0}
 			}
 
 			bt_state_selector_clear_all_markings_click = {
 				ROOT = {
 					for_each_scope_loop={
-						array=host_marked_states
-						clear_variable=host_mark_status
+						array=bt_marked_states
+						clear_variable=bt_mark_status
 					}
-					clear_array=host_marked_states
+					clear_array=bt_marked_states
 				}
 			}
 
@@ -66,7 +66,7 @@ scripted_gui = {
 		}
 		properties = {
 			bt_toogle_mark={
-				frame = host_mark_status
+				frame = bt_mark_status
 			}
 		}
 		triggers = {
@@ -77,6 +77,14 @@ scripted_gui = {
 							has_war = yes
 						}
 					}
+					owner = { #no sendiong to puppets
+						NOT = {
+							is_puppet = yes
+						}
+					}
+					NOT = { #no sending to self
+						is_controlled_by = ROOT
+					}
 					ROOT = { #no send while at war
 						NOT = {
 							has_war = yes
@@ -86,7 +94,7 @@ scripted_gui = {
 						check_variable = {Root.selected_timeframe=0}
 					}
 					NOT = { #must have at least 1 state selected 
-						check_variable = {ROOT.host_marked_states^num=0}
+						check_variable = {ROOT.bt_marked_states^num=0}
 					}
 				}
 				

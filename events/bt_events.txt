@@ -3,7 +3,7 @@ add_namespace = bt_event_namespace
 country_event = { #ask target country if they want to acept deal.
 	id = bt_event_namespace.1
 	title = "Land Sell Offer From [FROM.GetNameDef]"
-	desc = "[FROM.GetNameDefCap] would like to sell [?FROM.host_marked_states^num|R0..0] states to us for the price of [?FROM.bt_selected_civ_cost|R0..0] civilian factories for [?FROM.selected_timeframe] months."
+	desc = "[FROM.GetNameDefCap] would like to sell [?FROM.bt_marked_states^num|R0..0] states to us for the price of [?FROM.bt_selected_civ_cost|R0..0] civilian factories for [?FROM.selected_timeframe] months."
 
 	is_triggered_only = yes #triggered by GUI
 

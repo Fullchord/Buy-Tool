@@ -156,7 +156,7 @@ bt_save_payment_data = {
 			value = FROM
 		}
 		for_each_scope_loop = {
-			array = FROM.host_marked_states
+			array = FROM.bt_marked_states
 			add_to_array={ROOT.bt_incoming_selected_states_1=THIS}
 		}
 	}
@@ -184,7 +184,7 @@ bt_save_payment_data = {
 			var = ROOT.bt_incomming_civ_payment_country_2
 		}
 		for_each_scope_loop = {
-			array = FROM.host_marked_states
+			array = FROM.bt_marked_states
 			add_to_array={ROOT.bt_incoming_selected_states_2=THIS}
 		}
 	}
@@ -212,7 +212,7 @@ bt_save_payment_data = {
 			var = ROOT.bt_incomming_civ_payment_country_3
 		}
 		for_each_scope_loop = {
-			array = FROM.host_marked_states
+			array = FROM.bt_marked_states
 			add_to_array={ROOT.bt_incoming_selected_states_3=THIS}
 		}
 	}
@@ -240,7 +240,7 @@ bt_save_payment_data = {
 			var = ROOT.bt_incomming_civ_payment_country_4
 		}
 		for_each_scope_loop = {
-			array = FROM.host_marked_states
+			array = FROM.bt_marked_states
 			add_to_array={ROOT.bt_incoming_selected_states_4=THIS}
 		}
 	}
@@ -268,7 +268,7 @@ bt_save_payment_data = {
 			var = ROOT.bt_incomming_civ_payment_country_5
 		}
 		for_each_scope_loop = {
-			array = FROM.host_marked_states
+			array = FROM.bt_marked_states
 			add_to_array={ROOT.bt_incoming_selected_states_5=THIS}
 		}
 	}
@@ -296,7 +296,7 @@ bt_save_payment_data = {
 			var = ROOT.bt_incomming_civ_payment_country_6
 		}
 		for_each_scope_loop = {
-			array = FROM.host_marked_states
+			array = FROM.bt_marked_states
 			add_to_array={ROOT.bt_incoming_selected_states_6=THIS}
 		}
 	}
@@ -324,7 +324,7 @@ bt_save_payment_data = {
 			var = ROOT.bt_incomming_civ_payment_country_7
 		}
 		for_each_scope_loop = {
-			array = FROM.host_marked_states
+			array = FROM.bt_marked_states
 			add_to_array={ROOT.bt_incoming_selected_states_7=THIS}
 		}
 	}
@@ -352,7 +352,7 @@ bt_save_payment_data = {
 			var = ROOT.bt_incomming_civ_payment_country_8
 		}
 		for_each_scope_loop = {
-			array = FROM.host_marked_states
+			array = FROM.bt_marked_states
 			add_to_array={ROOT.bt_incoming_selected_states_8=THIS}
 		}
 	}
@@ -380,7 +380,7 @@ bt_save_payment_data = {
 			var = ROOT.bt_incomming_civ_payment_country_9
 		}
 		for_each_scope_loop = {
-			array = FROM.host_marked_states
+			array = FROM.bt_marked_states
 			add_to_array={ROOT.bt_incoming_selected_states_9=THIS}
 		}
 	}
@@ -408,7 +408,7 @@ bt_save_payment_data = {
 			var = ROOT.bt_incomming_civ_payment_country_10
 		}
 		for_each_scope_loop = {
-			array = FROM.host_marked_states
+			array = FROM.bt_marked_states
 			add_to_array={ROOT.bt_incoming_selected_states_10=THIS}
 		}
 	}

@@ -39,14 +39,14 @@
  bt_current_incoming_payment_9:0 "[?ROOT.bt_incomming_civ_cost_9] £GFX_civ_factory  Payment to [?bt_current_payment_9_country.GetNameWithFlag]"
  bt_current_incoming_payment_10:0 "[?ROOT.bt_incomming_civ_cost_10] £GFX_civ_factory  Payment to [?bt_current_payment_10_country.GetNameWithFlag]"
 
- state_count_is_not_one:0 "[?ROOT.host_marked_states^num|Y0..0] States are Selected"
- state_count_is_one:0 "[?ROOT.host_marked_states^num|Y0..0] State is Selected"
+ state_count_is_not_one:0 "[?ROOT.bt_marked_states^num|Y0..0] States are Selected"
+ state_count_is_one:0 "[?ROOT.bt_marked_states^num|Y0..0] State is Selected"
 
 
 
 
  bt_event_namespace.1.t:0 "Land Purchase Offer From [FROM.GetName]"
- bt_event_namespace.1.desc:0 "[FROM.GetNameDefCap] would like to purchace [?FROM.host_marked_states^num|Y0..0] states from you for the price of "
+ bt_event_namespace.1.desc:0 "[FROM.GetNameDefCap] would like to purchace [?FROM.bt_marked_states^num|Y0..0] states from you for the price of "
 
 
  bt_event_namespace.1.a:0 "Accept the deal!"
